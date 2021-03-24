@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="covid19 info in Ukraine">
+    <meta name="author" content="drewg3r">
+
+    <title>Covid-19 в Україні</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/papaparse.min.js" language="javascript"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Covid-19 в Україні<span id="head"></span><span class="accd" id="updatedStatus"></span></h1>
+      <p class="lead">Інформація про поширення коронавірусу в Україні</p>
+      <div class="row">
+        <div class="col-12">
+          <center>
+            <span class="acc">Всього випадків: </span><span class="acc" id="totalCases"></span>
+          </center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4"><center>
+            <span class="acc" id="totalActiveCases"></span>
+            <span class="accd">(<span class="accd" id="activeCasesDelta"></span>)</span>
+            <p class="h5">Заражених</p>
+        </center></div>
+
+        <div class="col-12 col-lg-4"><center>
+            <span class="ncc" id="newCases"></span><span class="nccd"></span>
+            <p class="h5">Нових випадків</p>
+        </center></div>
+
+
+        <div class="col-12 col-lg-4"><center>
+            <span class="rcc" id="recoveredDelta"></span>
+            <span class="acc">/</span>
+            <span class="dcc" id="deathsDelta"></span><br>
+            <span class="tdc">(<span class="tdc" id="totalRecovered"></span> / <span class="tdc" id="totalDeaths"></span>)</span>
+            <p class="h5">Одужало/померло(всього)</p>
+        </center></div>
+
+    </div><br>
+
+      <h2>Історія</h2>
+      <div class="table-responsive">
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Дата</th>
+      <th scope="col">Нових випадків</th>
+      <th scope="col">Приріст заражених</th>
+      <th scope="col">Всього заражених</th>
+    </tr>
+  </thead>
+  <tbody id="tableHistory">
+  </tbody>
+</table>
+</div>
+      <hr>
+    </div> <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+        <select class="form-select" aria-label="Default select example" onchange="fillFields()" id="districtSelection">
+          <option value="0" selected="selected">Україна</option>
+          <option value="1">Вінницька обл.</option>
+          <option value="2">Волинська обл.</option>
+          <option value="3">Дніпропетровська обл.</option>
+          <option value="4">Донецька обл.</option>
+          <option value="5">Житомирська обл.</option>
+          <option value="6">Закарпатська обл.</option>
+          <option value="7">Запорізька обл.</option>
+          <option value="8">Івано-Франківська обл.</option>
+          <option value="9">Київська обл.</option>
+          <option value="10">Кіровоградська обл.</option>
+          <option value="11">Луганська обл.</option>
+          <option value="12">Львівська обл.</option>
+          <option value="13">Миколаївська обл.</option>
+          <option value="14">м. Київ</option>
+          <option value="15">Одеська обл.</option>
+          <option value="16">Полтавська обл.</option>
+          <option value="17">Рівненська обл.</option>
+          <option value="18">Сумська обл.</option>
+          <option value="19">Тернопільська обл.</option>
+          <option value="20">Харківська обл.</option>
+          <option value="21">Херсонська обл.</option>
+          <option value="22">Хмельницька обл.</option>
+          <option value="23">Черкаська обл.</option>
+          <option value="24">Чернівецька обл.</option>
+          <option value="25">Чернігівська обл.</option>
+        </select>
+        <br>
+        <span class="text-muted"><br><a href="https://github.com/drewg3r">drewg3r</a> | <a href="https://github.com/drewg3r/covid">repo</a></span>
+      </div>
+    </footer>
+  </body>
+  <script src="js/covid.js" language="javascript"></script>
+</html>

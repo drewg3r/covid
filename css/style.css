@@ -1,0 +1,70 @@
+body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+.row .row {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /*background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);*/
+}
+
+
+.acc {
+    color: #263238;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.accd {
+    color: #455a64;
+    font-size: 28px;
+
+}
+
+.ncc {
+    color: #d50000;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.nccd {
+    color: #ff5252;
+    font-size: 28px;
+
+}
+
+.rcc {
+    color: #00c853;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.dcc {
+    color: #212121;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.tdc {
+    color: #616161;
+    font-size: 28px;
+
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
